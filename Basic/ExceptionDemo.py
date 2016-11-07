@@ -9,10 +9,10 @@
 
 
 try:
-    create_file = open('Exception.txt','w')
+    create_file = open('Exception.txt', 'w')
     create_file.writelines('我是为了演示异常而新建的文件')
     sum = 1 + '1'
-except OSError as reason:       # 进行捕获异常、reason 是指具体的异常信息
+except OSError as reason:  # 进行捕获异常、reason 是指具体的异常信息
     print('出现异常，异常是：' + reason)
 except TypeError as reason:
     print('出现异常，异常是：' + reason)
@@ -20,5 +20,3 @@ finally:
     create_file.writelines('\n 这行是在 finally添加的。')
     create_file.close()
     print('程序结束')
-
-
