@@ -1,1 +1,1 @@
-![要详细了解PIL的强大功能，请请参考Pillow官方文档](https://pillow.readthedocs.org/)
+[要详细了解PIL的强大功能，请参考Pillow官方文档](https://pillow.readthedocs.org/)
