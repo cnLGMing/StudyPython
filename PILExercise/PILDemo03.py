@@ -13,9 +13,9 @@ resultChar = ""
 def randomChar():
     while (True):
         num = random.randint(48, 122)
-        if (((57 < num < 65) or (90 < num < 97))):
-            continue;
-    return chr(random.randint(65, 90))  # 数字:48-57; 大写字母:65-90; 小写字母:97-122
+        if (not ((57 < num < 65) or (90 < num < 97))):  # 排除不合法数据
+            break;
+    return chr(num)  # 数字:48-57; 大写字母:65-90; 小写字母:97-122
 
 
 # 随机颜色1
